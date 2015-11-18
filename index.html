@@ -27,12 +27,12 @@ function addInput () {
   var listinput = document.getElementById('liInput').value;
   console.log(listinput);
 
-  list.innerHTML += '<li>' + listinput + '</li>' + '<button onClick="deleteInput()">-</button>';
+  list.innerHTML += '<li>' + listinput + '<button onClick="deleteInput(this)">-</button></li>';
 
 };
 
-function deleteInput() {
-  
+function deleteInput(e) {
+  e.parentNode.parentNode.removeChild(e.parentNode);
 };
 
 </script>
