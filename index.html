@@ -1,0 +1,42 @@
+
+Goal: Create a todo list in JS, JQuery & AngularJS. First JS.
+
+<html>
+
+<body>
+
+<ul id="list">
+</ul>
+
+//Input field + add button
+<br/>
+<input type="text" name="liInput" id="liInput" \>
+<button onClick="addInput()" id="addListItem">+</button>
+<br/>
+// Create a function for adding list item
+
+<script>
+
+var list = document.getElementById('list');
+
+//var listinput = document.getElementById('liInput').value;
+// Create the list item with a done delete button
+function addInput (listinput) {
+  //console.log(listinput);
+  //var ListItemvalue = list.value;
+  var listinput = document.getElementById('liInput').value;
+  console.log(listinput);
+
+  list.innerHTML += '<li>' + listinput + '</li>';
+
+};
+
+</script>
+
+<br/>
+//  Create a delete button
+
+
+</body>
+
+</html>
