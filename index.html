@@ -21,14 +21,18 @@ var list = document.getElementById('list');
 
 //var listinput = document.getElementById('liInput').value;
 // Create the list item with a done delete button
-function addInput (listinput) {
+function addInput () {
   //console.log(listinput);
   //var ListItemvalue = list.value;
   var listinput = document.getElementById('liInput').value;
   console.log(listinput);
 
-  list.innerHTML += '<li>' + listinput + '</li>';
+  list.innerHTML += '<li>' + listinput + '</li>' + '<button onClick="deleteInput()">-</button>';
 
+};
+
+function deleteInput() {
+  
 };
 
 </script>
