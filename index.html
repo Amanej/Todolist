@@ -1,19 +1,75 @@
-
-Goal: Create a todo list in JS, JQuery & AngularJS. First JS.
-
 <html>
+<style>
+
+body {
+  text-align: center;
+  background-color: beige;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+li {
+  list-style-type: none;
+    font-size: 1.8rem;
+    padding: 5px 15px;
+    background-color: #242463;
+/* width: 20%; */
+margin: auto;
+border-color: #131338;
+border-width: 4px;
+border-style: solid;
+color: white;
+}
+
+li button {
+  margin: 5px 20px;
+position: relative;
+top: -4px;
+background-color: black;
+color: white;
+font-size: 18px;
+font-weight: bolder;
+padding: 0px 15px;
+border-color: black;
+float: right;
+}
+#list {
+  margin: 0;
+padding: 0;
+}
+
+#liInput {
+  font-size: 1.8rem;
+padding: 10px;
+}
+
+#addListItem {
+  padding: 0;
+font-size: 2.8rem;
+position: relative;
+top: 6px;
+}
+
+</style>
 
 <body>
+<!--
+Goal: Create a todo list in JS, JQuery & AngularJS. First JS.
+-->
+
+<h1>My todolist</h1>
 
 <ul id="list">
 </ul>
 
-//Input field + add button
+<!--//Input field + add button-->
 <br/>
 <input type="text" name="liInput" id="liInput" \>
 <button onClick="addInput()" id="addListItem">+</button>
 <br/>
-// Create a function for adding list item
+<!--// Create a function for adding list item-->
 
 <script>
 
